@@ -218,19 +218,27 @@ nav{
     padding:5px  0;
 }
 .col-4 button{
-    padding: 10px;
+    cursor: pointer;
+    padding: 15px 10px;
     width: 80%;
     background: linear-gradient(283.44deg, #6525DC 0.03%, #4B4DDE 72.58%);
     border-radius: 5px;
     font-size: 15px;
     font-weight: 400;
 }
+.col-4 button a{
+    text-decoration: none;
+}
 .main{
     background: linear-gradient(283.44deg, #6525DC 0.03%, #4B4DDE 72.58%);
 }
-.col-4 button:nth-child(2){
-    
-    
+.button{
+    background: #ffff !important;    
 }
+.button a{
+    color: #6525DC;
+
+}
+
 /* contact us style  */
 
