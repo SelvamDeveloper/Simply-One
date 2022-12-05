@@ -1,12 +1,22 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: #ffff;
     overflow-x:hidden;
+    border: none;
 }
 body{
     background-color: #22324C;
+}
+::-webkit-scrollbar-track{
+    background-color: #22324C;
+}
+::-webkit-scrollbar{
+    width: 7px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #4B4DDE;
 }
 
 /* navbar section  */
@@ -65,6 +75,7 @@ nav{
 }
 .col-1 h1{
     font-size: 70px;
+    line-height: 90px;
     padding-bottom: 10px;
 }
 .col-1 p{
@@ -158,5 +169,67 @@ nav{
 }
 
 .intigration{
-    
+    display: flex;
+    margin: auto;
+    width: 40%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px ;
 }
+.intigration p{
+    font-size: 20px;
+    font-weight: 300;
+}
+.intigration button{
+    padding: 10px;
+    width: 150px;
+    background: linear-gradient(283.44deg, #6525DC 0.03%, #4B4DDE 72.58%);
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+/* pricing style  */
+
+.row-4{
+    padding: 80px 15%;
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.col-4{
+    background-color: #192233;
+    text-align: center;
+    padding: 50px 10px;
+    border-radius: 5px;
+}
+.col-4 h1{
+    font-size: 30px;
+    font-weight: 600;
+}
+.col-4 h2{
+    font-size: 80px;
+    font-weight: 600;
+    padding: 10px 0;
+}
+.col-4 ul li{
+    font-size: 15px;
+    font-weight: 300;
+    padding:5px  0;
+}
+.col-4 button{
+    padding: 10px;
+    width: 80%;
+    background: linear-gradient(283.44deg, #6525DC 0.03%, #4B4DDE 72.58%);
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 400;
+}
+.main{
+    background: linear-gradient(283.44deg, #6525DC 0.03%, #4B4DDE 72.58%);
+}
+.col-4 button:nth-child(2){
+    color: #ffff;
+}
+/* contact us style  */
+
