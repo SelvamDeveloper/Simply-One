@@ -203,6 +203,7 @@ nav{
     text-align: center;
     padding: 50px 10px;
     border-radius: 5px;
+    transition: 0.5s;
 }
 .col-4 h1{
     font-size: 30px;
@@ -240,6 +241,9 @@ nav{
     color: #6525DC;
 
 }
+.col-4:hover{
+    transform: translateY(-20px);
+}
 
 /* contact us style  */
 .mail{
@@ -266,14 +270,16 @@ input, textarea{
     border-radius: 5px;
     z-index: -1;
     margin-top: 20px;
+    top: 1px;
 }
 label{
     position: absolute;
     top: 35px;
     left: 20px;
-    opacity: 0.4;
+    opacity: 0;
     transition: 0.5s;
     padding: 5px;
+    z-index: -1;
 
 
 }
@@ -289,7 +295,7 @@ input:focus+label{
     background-color: #22324C;
     top: 1px;
     opacity: 1;
-    z-index: 111;
+    z-index: 9999;
 
 }
 textarea:focus+label{
