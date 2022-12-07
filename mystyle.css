@@ -271,37 +271,58 @@ input, textarea{
     z-index: -1;
     margin-top: 20px;
     top: 1px;
+    font-size: 15px;
 }
 label{
     position: absolute;
     top: 35px;
     left: 20px;
-    opacity: 0;
+    opacity: 0.5;
     transition: 0.5s;
     padding: 5px;
     z-index: -1;
+    pointer-events: none    ;
 
 
 }
 textarea{
-    height: 100%;
+    height: 168px;
 }
 .input{
     position: relative;
     margin-bottom: 20px;
     margin-top: 20px;
+    font-size: 18px;
 }
+input:valid+label,
 input:focus+label{
     background-color: #22324C;
     top: 1px;
     opacity: 1;
     z-index: 9999;
+    color:  #2587ff;
+
 
 }
+textarea:valid+label,
 textarea:focus+label{
     background-color: #22324C;
     top: 1px;
     opacity: 1;
     z-index: 111;
+    color:  #2587ff;
 
+
+}
+
+.mail button {
+    margin: 10px;
+    padding: 12px;
+    width: 150px;
+    color: #6525DC;
+    font-size: 15px;
+    font-weight: 500;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
 }
