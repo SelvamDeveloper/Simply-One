@@ -112,6 +112,7 @@ nav{
     height: 100%;
 }
 .row-2 {
+    overflow: hidden;
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -145,6 +146,7 @@ nav{
     height: 100%;
 }
 .row-3{
+    overflow: hidden;
     display: flex;
 }
 .col-3 img{
@@ -243,12 +245,12 @@ nav{
 }
 .col-4:hover{
     transform: translateY(-20px);
-    box-shadow: 10px 10px 50px black;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.387);
 }
 
 /* contact us style  */
 .mail{
-    padding: 40px 10%;
+    padding: 40px 13%;
 
 }
 .row-5{
@@ -326,4 +328,13 @@ textarea:focus+label{
     align-items: center;
     cursor: pointer;
     border-radius: 5px;
+    transition: 1s;
 }
+.mail button:hover{
+    background: linear-gradient(283.44deg, #6525DC 0.03%, #4B4DDE 72.58%);
+    color: #ffff;
+}
+
+/* responsive layout  */
+
+
