@@ -396,6 +396,7 @@ textarea:focus+label{
     width: 100%;
 }
 .scroll{
+    width: 100%;
     overflow-y: scroll;
     max-height: 43%;
 }
@@ -411,6 +412,18 @@ textarea:focus+label{
 }
 .col-6 h1{
     padding-bottom: 10px;
+}
+
+/* footer style  */
+
+.row-l{
+    display: flex;
+    background: linear-gradient(283.44deg, #6525DC 0.03%, #4B4DDE 72.58%);
+    padding: 100px 5%;
+    justify-content: center;
+}
+.col-l{
+    flex-basis: 30%;
 }
 
 
