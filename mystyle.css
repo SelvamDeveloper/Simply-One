@@ -377,6 +377,7 @@ textarea:focus+label{
 /* port style  */
 
 .row-6{
+    overflow: hidden;
     display: flex;
     padding: 50px 10%;
 }
