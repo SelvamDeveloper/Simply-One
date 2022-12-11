@@ -386,23 +386,27 @@ textarea:focus+label{
     justify-content: center;
     text-align: left;
 }
+.col-6 img{
+    width: 100%;
+}
 .col-6{
     position: relative;
     flex-basis: 50%;
+    width: 100%;
 }
 .scroll{
     overflow-y: scroll;
-    max-height: 316px;
+    max-height: 43%;
 }
 .scroll img{
+    width: 99%;
     overflow-y: scroll;
-    width: 555px;
     height: 100%;
 }
 .scroll {
     position: absolute;
-    top: 157px;
-    left: 78px;
+    top: 21%;
+    left: 1%;
 }
 .col-6 h1{
     padding-bottom: 10px;
@@ -511,6 +515,22 @@ textarea:focus+label{
 
     .row-4{
         padding: 20px;
+    }
+
+    /* profolio style  */
+
+    .row-6{
+        flex-direction: column;
+    }
+
+    /* mail section  */
+
+    .row-5{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    
     }
 }
 
