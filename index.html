@@ -5,6 +5,8 @@
         <link rel="icon" href="img/icon.png">
         <link rel="stylesheet" href="mystyle.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://smtpjs.com/v3/smtp.js">
+        </script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -90,7 +92,7 @@
 
         <div class="price">
             <div class="row-4">
-                <div  class="col-4">    
+                <div data-aos="fade-up"  data-aos-duration="1500" data-aos-delay="100" class="col-4">    
                     <h1>Standard</h1>
                     <h2>20K</h2>
                     <ul>
@@ -110,7 +112,7 @@
                     </ul>
                     <button><a href="">send enquiry</a></button>
                 </div>
-                <div class="col-4 main">
+                <div data-aos="fade-up"  data-aos-duration="2000" data-aos-delay="150" class="col-4 main">
                     <h1>Business</h1>
                     <h2>50K</h2>
                     <ul>
@@ -130,7 +132,7 @@
                     </ul>
                     <button class="button"><a href="">send enquiry</a></button>
                 </div>
-                <div class="col-4">
+                <div data-aos="fade-up"  data-aos-duration="3000" data-aos-delay="200" class="col-4">
                     <h1>Premium</h1>
                     <h2>80K</h2>
                     <ul>
@@ -184,7 +186,7 @@
 
     <div class="mail">  
         <h1>Contact us</h1>
-        <form action="">
+        <form onsubmit="SendMail(); reset(); return false;">
         <div class="row-5">
         
             <div class="col-5">
