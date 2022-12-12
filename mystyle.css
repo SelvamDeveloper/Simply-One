@@ -427,6 +427,9 @@ textarea:focus+label{
 .col-l{
     flex-basis: 30%;
 }
+.col-l img{
+    width: 300px;
+}
 
 
 /* responsive layout  */
