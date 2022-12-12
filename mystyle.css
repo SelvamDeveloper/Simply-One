@@ -59,6 +59,8 @@ nav{
 .menu ul{
     display: flex;
     margin: auto;
+    overflow: hidden;
+    padding: 30px;
     max-height: 100px;
 }
 .menu ul li{
@@ -445,6 +447,8 @@ textarea:focus+label{
         display: block;
         padding: 0;
         font-size: 20px;
+        max-height: 0px;
+
 
     }
     .menu ul li{
