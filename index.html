@@ -5,8 +5,6 @@
         <link rel="icon" href="img/icon.png">
         <link rel="stylesheet" href="mystyle.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://smtpjs.com/v3/smtp.js">
-        </script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -186,7 +184,7 @@
 
     <div class="mail">  
         <h1>Contact us</h1>
-        <form onsubmit="SendMail(); reset(); return false;">
+        <form action="https://formsubmit.co/selvam.s3403@gmail.com" method="POST">
         <div class="row-5">
         
             <div class="col-5">
@@ -195,7 +193,7 @@
                     <label>Name</label>
                 </div>
                 <div class="input">
-                    <input type="text"  name="email" required="required">
+                    <input type="text" id="email"  name="email" required="required">
                     <label>Email ID</label>
                 </div>
                 <div class="input">
@@ -209,7 +207,7 @@
                     <label>Website Type</label>
                 </div>
                 <div class="input">
-                    <textarea required="required"></textarea>
+                    <textarea input="textarea" name="message" required="required"></textarea>
                     <label>Enter Message</label>
                 </div>
             </div>

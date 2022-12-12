@@ -20,16 +20,17 @@ function togglemenu(){
 
 
 // mail section script 
-function SendMail(){
-    Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "selvam.s3403@gmail.com",
-        Password : "B521A14A4E2C63A95347FA3682F9024B155A",
-        To : 'selvam.s3403@gmail.com',
-        From : "you@isp.com",
-        Subject : "This is the subject",
-        Body : "And this is the body"
-    }).then(
-      message => alert(message)
-    );
-}
+
+// function SendMail(){
+//     Email.send({
+//         Host : "smtp.elasticemail.com",
+//         Username : "selvam.s3403@gmail.com",
+//         Password : "4892BB1AE5CB9E11063305D35AF4C11425DA",
+//         To : 'selvam.s3403@gmail.com',
+//         From : document.getElementById("email").value,
+//         Subject : "This is the subject",
+//         Body : "And this is the body"
+//     }).then(
+//       message => alert(message)
+//     );
+// }
