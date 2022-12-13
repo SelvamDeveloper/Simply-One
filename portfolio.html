@@ -13,6 +13,21 @@
     </head>
 <body>
     <div class="container">
+        <nav>
+            <div class="logo">
+                <img src="img/Simply one logo.png" alt="logo">
+            </div>
+            <div class="menu">
+                <img  src="img/menu icon.png" class="menu-icon" onclick="togglemenu()">
+                <ul id="menulist">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Priceing</a></li>
+                    <li><a href="">Portfilo</a></li>
+                    <li><a href="">About</a></li>
+                </ul>
+            </div>
+        </nav>
+
         <ul class="filter-menu">
             <li data-target="all">All</li>
             <li data-target="male">Male</li>
@@ -21,7 +36,13 @@
         </ul>
 
         <ul class="filter-item">
-            <li data-item="male"><img src="https://res.cloudinary.com/seidensticker/image/upload/ar_1:1,c_mfit,w_900,f_auto/production/product/1227/63/1227-63-image-3-5ea8c16216339.jpg" alt=""></li>
+            <li data-item="male">
+                <div data-aos="fade-up"  data-aos-duration="1800" data-aos-delay="200" class="col-6">
+                    <img src="img/pc.png" alt="">
+                <div class="scroll">
+                    <img src="img/01.svg" alt=""></div>
+                </div>
+            </li>
             <li data-item="male"><img src="https://media.boohoo.com/i/boohoo/mzz70546_white_xl?$product_image_main_mobile$" alt=""></li>
             <li data-item="female"><img src="https://i.pinimg.com/originals/8e/dc/0b/8edc0b484b3c9098181f72746653f63c.jpg" alt=""></li>
           <li data-item="female"><img src="https://i.pinimg.com/originals/a3/dd/2c/a3dd2c9d7028a36f89291ac308497cca.jpg" alt=""></li>
