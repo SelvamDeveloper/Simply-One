@@ -47,6 +47,7 @@ nav{
     overflow: hidden;
     padding: 30px;
     max-height: 100px;
+    transition: 1.5s;
 }
 .menu ul li{
     margin:auto 20px;
@@ -76,6 +77,8 @@ img{
 .filter-menu li{
     display: inline-block;
     padding: 10px 18px;
+    margin: 0 10px;
+    border-radius: 5px;
     background: #ffff;
     color: #6525DC;
     cursor: pointer;
@@ -89,20 +92,21 @@ img{
 
 
 
-.filter-item li{
-    width: 50%;
-    padding: 2px;
-    float: left;
-    overflow-y: hidden;
+.filter-item {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    padding: 0 15%;
+    grid-gap: 20px;
 }
 
-.filter-item li.active{
-    width: 50%;
+.filter-item .sec.active{
+    width: 100%;
     padding: 2px;
     transition: all 0.5s ease;
 }
 
-.filter-item li.delete{
+.filter-item .sec.delete{
     width: 0%;
     padding: 0;
     transition: all 0.5s ease;
@@ -129,7 +133,7 @@ img{
     max-height: 43%;
 }
 .scroll img{
-    width: 99%;
+    width: 99.4%;
     overflow-y: scroll;
     height: 100%;
 }
@@ -138,6 +142,9 @@ img{
     top: 21%;
     left: 1%;
 }
+
+
+/* responsive section  */
 
 @media screen and (min-width: 768px){
     .filter-item li.active,
@@ -158,4 +165,58 @@ img{
     h2{
         font-size: 270%;
     }
+}
+@media (max-width: 1107px) {
+
+    
+    .menu ul{
+        width:100%;
+        background: #192233;
+        position:absolute;
+        top:77px;
+        right:0;
+        z-index:2;
+        text-align: center;
+    }
+    .menu ul{
+        display: block;
+        padding: 0;
+        font-size: 20px;
+        max-height: 0px;
+
+
+    }
+    .menu ul li{
+        margin-top: 40px;
+        margin-bottom: 25px;
+        text-align: left;
+    }
+    .menu ul li a{
+        color: white;
+
+    }
+    #menulist{
+        overflow:hidden;
+        transition:2s;
+    }
+    .menu-icon{
+        padding-top: 15px;
+        width: 40px;
+        display: flex;
+    }
+    .logo img{
+        width: 180px;
+    }
+    nav{
+        padding: 20px 5%;
+    }
+
+
+    /* filer  */
+
+    .filter-item{
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+
+    }
+
 }

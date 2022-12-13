@@ -214,6 +214,8 @@ nav{
     display: grid;
     grid-gap: 40px;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    overflow: hidden;
+
 }
 .col-4{
     background-color: #192233;
@@ -403,7 +405,7 @@ textarea:focus+label{
     max-height: 43%;
 }
 .scroll img{
-    width: 99%;
+    width: 99.2%;
     overflow-y: scroll;
     height: 100%;
 }
