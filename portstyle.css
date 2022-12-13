@@ -1,8 +1,58 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #ffff;
+    overflow-x:hidden;
+    border: none;
+    text-decoration: none;
     box-sizing: border-box;
 }
+
+body{
+    background-color: #22324C;
+}
+::-webkit-scrollbar-track{
+    background-color: #22324C;
+}
+::-webkit-scrollbar{
+    width: 7px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #4B4DDE;
+}
+
+.logo img{
+    width: 200px;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    overflow-x: hidden;
+}
+nav{
+    padding: 2%;
+    z-index: 11111;
+    display: flex;
+    justify-content: space-between;
+}
+.menu-icon{
+    width: 40px;
+    display: none;
+}
+.menu ul{
+    display: flex;
+    margin: auto;
+    overflow: hidden;
+    padding: 30px;
+    max-height: 100px;
+}
+.menu ul li{
+    margin:auto 20px;
+    font-size: 20px;
+}
+
 
 html,body{
     width: 100%;
@@ -47,6 +97,7 @@ h2{
     width: 50%;
     padding: 2px;
     float: left;
+    overflow-y: hidden;
 }
 
 .filter-item li.active{
@@ -66,6 +117,34 @@ h2{
     width: 100%;
     height: 100%;
 }
+.filter-item{
+    margin: 0 5%;
+}
+
+/* port style  */
+.col-6 img{
+    width: 100%;
+}
+.col-6{
+    position: relative;
+    flex-basis: 50%;
+    width: 100%;
+}
+.scroll{
+    width: 100%;
+    overflow-y: scroll;
+    max-height: 43%;
+}
+.scroll img{
+    width: 99%;
+    overflow-y: scroll;
+    height: 100%;
+}
+.scroll {
+    position: absolute;
+    top: 21%;
+    left: 1%;
+}
 
 @media screen and (min-width: 768px){
     .filter-item li.active,
@@ -80,7 +159,7 @@ h2{
 @media screen and (min-width: 1280px){
     .filter-item li.active,
     .filter-item li{
-        width: 25%;
+        width: 30%;
     }
 
     h2{
