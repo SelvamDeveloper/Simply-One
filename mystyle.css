@@ -425,13 +425,25 @@ textarea:focus+label{
     display: flex;
     background: linear-gradient(283.44deg, #6525DC 0.03%, #4B4DDE 72.58%);
     padding: 100px 5%;
-    justify-content: center;
+    justify-content: space-between;
 }
 .col-l{
     flex-basis: 30%;
 }
 .col-l img{
     width: 300px;
+}
+.col-l:nth-child(1) p{
+    font-size: 15px;
+}
+.col-l:nth-child(2) h1{
+
+}
+.col-l:nth-child(2) ul{
+    
+}
+.col-l:nth-child(2) li{
+    
 }
 
 /* cursor movement style  */
@@ -441,13 +453,14 @@ textarea:focus+label{
     width: 30px;
     height: 30px;
     border-radius: 100%;
-    border: 1px solid #4B4DDE;
+    border: 2px solid #4B4DDE;
     transition: all 200ms ease-out;
     position: fixed;
     pointer-events: none;
     left: 0;
     top: 0;
     transform: translate(calc(-50% + 15px), -50%);
+    z-index: 99999;
   }
   
   .cursor2 {
@@ -460,16 +473,18 @@ textarea:focus+label{
     transform: translate(-50%, -50%);
     pointer-events: none;
     transition: width .3s, height .3s, opacity .3s;
+    z-index: 99999;
+
   }
   
   .hover {
-    background-color: rgb(255, 255, 255);
+    background-color: #2587ff;
     opacity: 0.5;
   }
   
   .cursorinnerhover {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     opacity: 1;
   }
 
