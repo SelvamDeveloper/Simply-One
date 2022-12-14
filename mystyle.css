@@ -434,6 +434,45 @@ textarea:focus+label{
     width: 300px;
 }
 
+/* cursor movement style  */
+
+
+  .cursor {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 1px solid #4B4DDE;
+    transition: all 200ms ease-out;
+    position: fixed;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    transform: translate(calc(-50% + 15px), -50%);
+  }
+  
+  .cursor2 {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: white;
+    opacity: 1;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: width .3s, height .3s, opacity .3s;
+  }
+  
+  .hover {
+    background-color: rgb(255, 255, 255);
+    opacity: 0.5;
+  }
+  
+  .cursorinnerhover {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+
 
 /* responsive layout  */
 
