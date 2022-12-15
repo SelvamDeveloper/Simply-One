@@ -185,6 +185,7 @@ nav{
     max-width: 550px;
     letter-spacing: 1px;
     line-height: 30px;
+    margin: auto;
 }
 
 .intigration{
@@ -431,7 +432,7 @@ textarea:focus+label{
     flex-basis: 30%;
 }
 .col-l img{
-    width: 300px;
+    width: 70%;
 }
 .col-l:nth-child(1) p{
     font-size: 15px;
