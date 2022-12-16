@@ -437,6 +437,9 @@ textarea:focus+label{
 .col-l:nth-child(1) p{
     font-size: 15px;
 }
+.col-l:nth-child(2){
+    padding-left: 5%;
+}
 .col-l:nth-child(2) h1{
     font-size: 40px;
 }
@@ -449,10 +452,17 @@ textarea:focus+label{
     transform: translateX(10px);
 }
 .col-l h1{
-    
+    position: relative;
 }
 .col-l h1::after{
+    content: "";
+    bottom: 0;
+    left: 0px;
     position: absolute;
+    height: 5px;
+    width: 110px;
+    background: linear-gradient(283.44deg, #6525DC 0.03%, #4B4DDE 72.58%);
+
 }
 
 /* cursor movement style  */
