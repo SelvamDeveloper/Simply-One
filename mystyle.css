@@ -424,7 +424,7 @@ textarea:focus+label{
 
 .row-l{
     display: flex;
-    background: linear-gradient(283.44deg, #6525DC 0.03%, #4B4DDE 72.58%);
+    background-color: #192233;
     padding: 100px 5%;
     justify-content: space-between;
 }
@@ -447,6 +447,12 @@ textarea:focus+label{
 }
 .col-l:nth-child(2) li:hover {
     transform: translateX(10px);
+}
+.col-l h1{
+    
+}
+.col-l h1::after{
+    position: absolute;
 }
 
 /* cursor movement style  */
@@ -481,8 +487,9 @@ textarea:focus+label{
   }
   
   .hover {
-    background-color: #2587ff;
-    opacity: 0.5;
+    background-color: #4B4DDE;
+    border:2px solid #ffff;
+    opacity: 0.8;
   }
   
   .cursorinnerhover {
