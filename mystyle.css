@@ -466,6 +466,9 @@ textarea:focus+label{
 }
 .col-l:nth-child(3) p{
     padding: 10px 0;
+}
+.col-l:nth-child(3) span{
+    font-weight: 500;
 }  
 
 /* cursor movement style  */
