@@ -385,13 +385,14 @@ textarea:focus+label{
 .row-6{
     overflow: hidden;
     display: flex;
-    padding: 50px 10%;
+    padding: 0px 10%;
 }
 .col-6:nth-child(1){
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: left;
+    padding: 30px;
 }
 .col-6 img{
     width: 100%;
@@ -626,9 +627,16 @@ textarea:focus+label{
     .row-6{
         flex-direction: column;
     }
+    .col-6:nth-child(1){
+        padding: 0px;
+    }
+    
 
     /* mail section  */
-
+    .mail{
+        padding: 40px 5%;
+    
+    }
     .row-5{
         display: flex;
         flex-direction: column;
