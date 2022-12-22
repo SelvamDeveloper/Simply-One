@@ -628,7 +628,7 @@ textarea:focus+label{
         flex-direction: column;
     }
     .col-6:nth-child(1){
-        padding: 0px;
+        padding: 40px 0 0 0;
     }
     
 
