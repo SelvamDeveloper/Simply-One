@@ -515,6 +515,18 @@ textarea:focus+label{
     opacity: 1;
   }
 
+/* particals animation  */
+
+.particals{
+    width: 10px;
+    height: 10px;
+    background-color: #ffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 5%;
+    left: 5% ;
+}
+
 
 /* responsive layout  */
 
