@@ -517,7 +517,7 @@ textarea:focus+label{
 
 /* particals animation  */
 
-.particals{
+.p-1{
     width: 10px;
     height: 10px;
     background-color: #ffff;
@@ -525,7 +525,7 @@ textarea:focus+label{
     position: absolute;
     top: 5%;
     left: 5%;
-    animation: p-1 20s infinite 10s ;   
+    animation: p-1 20s infinite 0s ;   
 }
 @keyframes p-1{
     0%{
