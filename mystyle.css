@@ -524,7 +524,25 @@ textarea:focus+label{
     border-radius: 50%;
     position: absolute;
     top: 5%;
-    left: 5% ;
+    left: 5%;
+    animation: p-1 20s infinite 10s ;   
+}
+@keyframes p-1{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(500px);
+    }
+    50%{
+        transform: translateY(500px);
+    }
+    75%{
+        transform: translateX(-50px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
 }
 
 /* responsive layout  */
