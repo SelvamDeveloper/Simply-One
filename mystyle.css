@@ -101,10 +101,14 @@ nav{
 .col-1 button{
     background: linear-gradient(283.44deg, #6525DC 0.03%, #4B4DDE 72.58%);
     border-radius: 6px;
-    width: 200px;
+    width: 150px;
     border: none;
-    padding: 20px;
-    font-size: 20px;
+    padding: 10px;
+    font-size: 18px;
+    transition: 0.5s;
+}
+.col-1 button:hover{
+    transform: translateY(-10px);
 }
 
 /* benefit section  */
@@ -525,6 +529,7 @@ textarea:focus+label{
     position: absolute;
     top: 5%;
     left: 5%;
+    z-index: 111111;
     animation: p-1 20s infinite 0s ;   
 }
 @keyframes p-1{
@@ -539,6 +544,311 @@ textarea:focus+label{
     }
     75%{
         transform: translateX(-50px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+.p-2{
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(283.44deg, #6525DC 0.03%, #4B4DDE 72.58%);
+    border-radius: 50%;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    z-index: 111111;
+    animation: p-2 20s infinite 0s ;   
+}
+@keyframes p-2{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateY(500px);
+    }
+    50%{
+        transform: translateX(500px);   
+    }
+    75%{
+        transform: translateY(-50px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+/* PARTICLES 2 */
+
+.p-3{
+    width: 10px;
+    height: 10px;
+    background-color: #ffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    z-index: 111111;
+    animation: p-3 20s infinite 0s ;   
+}
+@keyframes p-3{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateY(500px);
+    }
+    50%{
+        transform: translateX(500px);
+    }
+    75%{
+        transform: translateY(-50px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+.p-4{
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(283.44deg, #6525DC 0.03%, #4B4DDE 72.58%);
+    border-radius: 50%;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    z-index: 111111;
+    animation: p-4 20s infinite 0s ;   
+}
+@keyframes p-4{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(500px);
+    }
+    50%{
+        transform: translateY(500px);   
+    }
+    75%{
+        transform: translateX(-50px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+/* PARTICLES 3 */
+
+.p-5{
+    width: 10px;
+    height: 10px;
+    background-color: #ffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    z-index: 111111;
+    animation: p-5 20s infinite 0s ;   
+}
+@keyframes p-5{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(500px);
+    }
+    50%{
+        transform: translateY(200px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+.p-6{
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(283.44deg, #6525DC 0.03%, #4B4DDE 72.58%);
+    border-radius: 50%;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    z-index: 111111;
+    animation: p-6 20s infinite 0s ;   
+}
+@keyframes p-6{
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(300px);   
+    }
+    75%{
+        transform: translateY(-50px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+/* PARTICLES 4 */
+
+.p-7{
+    width: 10px;
+    height: 10px;
+    background-color: #ffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    z-index: 111111;
+    animation: p-7 20s infinite 0s ;   
+}
+@keyframes p-7{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateY(500px);
+    }
+    50%{
+        transform: translateX(300px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+.p-8{
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(283.44deg, #6525DC 0.03%, #4B4DDE 72.58%);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 111111;
+    animation: p-8 20s infinite 0s ;   
+}
+@keyframes p-8{
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateY(500px);   
+    }
+    75%{
+        transform: translateX(-50px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+/* PARTICLES 5 */
+
+.p-9{
+    width: 10px;
+    height: 10px;
+    background-color: #ffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 65%;
+    left: 5%;
+    z-index: 111111;
+    animation: p-9 20s infinite 0s ;   
+}
+@keyframes p-9{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(500px);
+    }
+    50%{
+        transform: translateY(500px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+.p-10{
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(283.44deg, #6525DC 0.03%, #4B4DDE 72.58%);
+    border-radius: 50%;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    z-index: 111111;
+    animation: p-10 20s infinite 0s ;   
+}
+@keyframes p-10{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateY(500px);
+    }
+    50%{
+        transform: translateX(300px);   
+    }
+    75%{
+        transform: translateY(-50px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+/* PARTICLES 6 */
+
+.p-11{
+    width: 10px;
+    height: 10px;
+    background-color: #ffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    z-index: 111111;
+    animation: p-11 20s infinite 0s ;   
+}
+@keyframes p-11{
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(500px);
+    }
+    75%{
+        transform: translateY(300px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+.p-12{
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(283.44deg, #6525DC 0.03%, #4B4DDE 72.58%);
+    border-radius: 50%;
+    position: absolute;
+    top: 80%;
+    left: 5%;
+    z-index: 111111;
+    animation: p-12 20s infinite 0s ;   
+}
+@keyframes p-12{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(500px);
+    }
+    50%{
+        transform: translateY(800px);
+    }
+    75%{
+        transform: translateY(-50px);
     }
     100%{
         transform: translateX(0px);
