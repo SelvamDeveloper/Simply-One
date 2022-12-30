@@ -154,7 +154,7 @@ img{
     top: 5%;
     left: 5%;
     z-index: 111111;
-    animation: p-1 20s infinite 0s ;   
+    animation: p-1 40s infinite 0s ;   
 }
 @keyframes p-1{
     0%{
@@ -182,7 +182,7 @@ img{
     top: 5%;
     left: 50%;
     z-index: 111111;
-    animation: p-2 20s infinite 0s ;   
+    animation: p-2 40s infinite 0s ;   
 }
 @keyframes p-2{
     0%{
@@ -210,20 +210,20 @@ img{
     background-color: #ffff;
     border-radius: 50%;
     position: absolute;
-    top: 20%;
-    left: 5%;
+    top: 50%;
+    left: 50%;
     z-index: 111111;
-    animation: p-3 20s infinite 0s ;   
+    animation: p-3 60s infinite 0s ;   
 }
 @keyframes p-3{
     0%{
         transform: translateX(0);
     }
     25%{
-        transform: translateY(500px);
+        transform: translateY(-100px);
     }
     50%{
-        transform: translateX(500px);
+        transform: translateX(-100px);
     }
     75%{
         transform: translateY(-50px);
@@ -238,20 +238,20 @@ img{
     background: linear-gradient(283.44deg, #6525DC 0.03%, #4B4DDE 72.58%);
     border-radius: 50%;
     position: absolute;
-    top: 20%;
-    left: 50%;
+    top: 50%;
+    left: 5%;
     z-index: 111111;
-    animation: p-4 20s infinite 0s ;   
+    animation: p-4 10s infinite 0s ;   
 }
 @keyframes p-4{
     0%{
         transform: translateX(0);
     }
     25%{
-        transform: translateX(500px);
+        transform: translateX(200px);
     }
     50%{
-        transform: translateY(500px);   
+        transform: translateY(400px);   
     }
     75%{
         transform: translateX(-50px);
