@@ -556,7 +556,7 @@ textarea:focus+label{
     border-radius: 50%;
     position: absolute;
     top: 5%;
-    left: 50%;
+    left: 80%;
     z-index: 111111;
     animation: p-2 20s infinite 0s ;   
 }
@@ -615,7 +615,7 @@ textarea:focus+label{
     border-radius: 50%;
     position: absolute;
     top: 20%;
-    left: 50%;
+    left: 80%;
     z-index: 111111;
     animation: p-4 20s infinite 0s ;   
 }
@@ -671,7 +671,7 @@ textarea:focus+label{
     border-radius: 50%;
     position: absolute;
     top: 35%;
-    left: 50%;
+    left: 80%;
     z-index: 111111;
     animation: p-6 20s infinite 0s ;   
 }
@@ -724,7 +724,7 @@ textarea:focus+label{
     border-radius: 50%;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 80%;
     z-index: 111111;
     animation: p-8 20s infinite 0s ;   
 }
@@ -777,7 +777,7 @@ textarea:focus+label{
     border-radius: 50%;
     position: absolute;
     top: 65%;
-    left: 50%;
+    left: 80%;
     z-index: 111111;
     animation: p-10 20s infinite 0s ;   
 }
@@ -808,7 +808,7 @@ textarea:focus+label{
     border-radius: 50%;
     position: absolute;
     top: 80%;
-    left: 50%;
+    left: 80%;
     z-index: 111111;
     animation: p-11 20s infinite 0s ;   
 }
