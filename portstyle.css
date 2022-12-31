@@ -73,10 +73,6 @@ nav{
 .menu ul li:hover:before{
     width: 100%;
 }
-/* .menu ul li:hover a{
-    color: #4B4DDE;
-    
-} */
 
 html,body{
     width: 100%;
