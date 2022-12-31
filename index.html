@@ -13,6 +13,12 @@
 
     </head>
 <body>
+    <!-- loader  -->
+
+    <div id="preloader"></div>
+
+    <!-- main section  -->
+
         <div class="container">
             <div class="p-1"></div>
             <div class="p-2"></div>
@@ -261,5 +267,14 @@
 </div>
 <!-- scripts of Simply One -->
 <script src="myscript.js"></script>
+
+<script>
+    var loader = document.getElementById("preloader");
+
+      window.addEventListener("load", function(){
+      loader.style.display="none";
+      })
+</script>
+
 </body>
 </html> 

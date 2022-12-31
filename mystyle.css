@@ -1017,3 +1017,14 @@ textarea:focus+label{
     }   
 }
 
+
+/* loader style  */
+
+#preloader{
+    background: #000 url(img/pre.gif) no-repeat center center;
+    background-size: -50%;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 111111111;
+}
