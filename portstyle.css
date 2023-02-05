@@ -127,6 +127,7 @@ img{
 
 .filter-item .sec.delete{
     width: 0%;
+    display: none;
     padding: 0;
     transition: all 0.5s ease;
 }
@@ -239,13 +240,10 @@ img{
         transform: translateX(0);
     }
     25%{
-        transform: translateY(-100px);
+        transform: translateY(-300px);
     }
     50%{
-        transform: translateX(-100px);
-    }
-    75%{
-        transform: translateY(-50px);
+        transform: translateX(-200px);
     }
     100%{
         transform: translateX(0px);
@@ -280,6 +278,49 @@ img{
     }
 }
 
+
+/* cursor movement style  */
+
+
+.cursor {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 2px solid #4B4DDE;
+    transition: all 200ms ease-out;
+    position: fixed;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    transform: translate(calc(-50% + 15px), -50%);
+    z-index: 99999;
+  }
+  
+  .cursor2 {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: white;
+    opacity: 1;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: width .3s, height .3s, opacity .3s;
+    z-index: 99999;
+
+  }
+  
+  .hover {
+    background-color: #4B4DDE;
+    border:2px solid #ffff;
+    opacity: 0.8;
+  }
+  
+  .cursorinnerhover {
+    width: 20px;
+    height: 20px;
+    opacity: 1;
+  }
 
 
 /* responsive section  */
