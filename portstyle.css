@@ -162,6 +162,17 @@ img{
     top: 21%;
     left: 1%;
 }
+.res{
+    width: 30%;
+}
+.res img{
+    position: absolute;
+    width: 29%;
+    height: 45%;
+    z-index: 1;
+    bottom: 67px;
+    right: 0;
+}
 
 /* particals animation  */
 
