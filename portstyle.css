@@ -21,7 +21,9 @@ body{
 ::-webkit-scrollbar-thumb{
     background-color: #4B4DDE;
 }
-
+.m-click{
+    margin: 20px 0;
+}
 .logo img{
     width: 200px;
 }
