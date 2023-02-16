@@ -9,6 +9,9 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+p::selection{
+    background: #5800fc;
+}
 body{
     background-color: #22324C;
 }
