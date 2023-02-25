@@ -698,7 +698,7 @@ textarea:focus+label{
   }
   
   .icons ul li:nth-child(3) a:before {
-    background: #0077b5;
+    background: linear-gradient(283.44deg, #6525DC 0.03%, #4B4DDE 72.58%);
   }
   
   .icons ul li:nth-child(4) a:before {
