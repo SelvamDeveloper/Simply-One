@@ -6,16 +6,32 @@ AOS.init();
 
         var menuList=document.getElementById("menulist");
         function togglemenu(){
-            if(menuList.style.maxHeight =="0px")
+            if(menuList.style.maxHeight =="1200px")
                 {
-                menuList.style.maxHeight="1200px";
+                menuList.style.maxHeight="0px";
                 }
             else
                 {
-                    menuList.style.maxHeight="0px";
+                menuList.style.maxHeight="1200px";
                 }
 
             }
+
+
+            const burgAnimation = () =>{
+                var burger = document.querySelector('.svgburg')
+                 var path1 = document.querySelector('.path1')
+                 var path2 = document.querySelector('.path2')
+                 var mline = document.querySelector('.mline')
+                 burger.addEventListener('click',() =>{     
+                     path1.classList.toggle('cross');
+                     path2.classList.toggle('cross');
+                     mline.classList.toggle('hide');
+                    }
+                  )
+              
+              }
+             burgAnimation();
 
 
 // cursor movement script 

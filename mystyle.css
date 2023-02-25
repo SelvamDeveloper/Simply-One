@@ -73,6 +73,33 @@ nav{
     margin:auto 20px;
     font-size: 20px;
 }
+/* menu icon animation   */
+
+.path1, .path2{
+    stroke-dasharray: 104;
+    stroke-dashoffset: -71;
+    transition: 1s all ease;
+ }
+ .cross{
+   stroke-dashoffset: 68;
+ }
+ .mline{
+   stroke-dasharray: 41;
+   stroke-dashoffset: -82;
+   transition: 1s all ease;
+ }
+ .hide{
+   stroke-dasharray: 43;
+   stroke-dashoffset: 130;
+ }
+ .svgburg{
+    position: absolute;
+    top: -7px;
+    width: 48px;
+    right: 10px;
+ }
+ 
+ /*reduce height and wihth of svg for resizing*/
 
 /* main landing page  */
 
@@ -598,6 +625,85 @@ textarea:focus+label{
 .col-l:nth-child(3) span{
     font-weight: 500;
 }  
+
+/* footer icon  */
+
+.icons{
+    margin-top: 10px;
+}
+
+.icons ul li i:after{
+    display: none;
+}
+.icons ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .icons ul li {
+    list-style: none;
+  }
+  
+  .icons ul li a {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    text-align: center;
+    font-size: 35px;
+    margin: 0 10px;
+    display: block;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #fff;
+    z-index: 1;
+  }
+  
+  .icons ul li a .icon {
+    color: #262626;
+    transition: .5s;
+    position: relative;
+    z-index: 4;
+
+  }
+  
+  .icons ul li a:hover .icon {
+    color: #fff;
+    transform: rotateY(360deg);
+
+  }
+  
+  .icons ul li a:before {
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: .5s;
+    z-index: 2;
+  }
+  
+  .icons ul li a:hover:before {
+    top: 0;
+  }
+  
+  .icons ul li:nth-child(1) a:before{
+    background: #23d200;
+  }
+  
+  .icons ul li:nth-child(2) a:before{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  }
+  
+  .icons ul li:nth-child(3) a:before {
+    background: #0077b5;
+  }
+  
+  .icons ul li:nth-child(4) a:before {
+    background: #0088ff;
+  }
 
 /* cursor movement style  */
 
@@ -1142,7 +1248,34 @@ textarea:focus+label{
     }
     .col-l:nth-child(3) p{
         padding: 10px 0;
-    }   
+    }
+    
+    /* icon style  */
+
+    .icons ul{
+        align-items: center;
+        justify-content: center;
+    }
+    .icons ul li a {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        background-color: #fff;
+        text-align: center;
+        font-size: 30px;
+        margin: 0 10px;
+        display: block;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 3px solid #fff;
+        z-index: 1;
+      }
+
+/* cursor style  */
+    .cursor,.cursor2{
+        display: none;
+    }    
+
 }
 
 
@@ -1156,3 +1289,5 @@ textarea:focus+label{
     position: fixed;
     z-index: 111111111;
 }
+
+
