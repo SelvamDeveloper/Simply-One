@@ -536,6 +536,13 @@ textarea:focus+label{
 
 /* port style  */
 
+.res{
+    width: 23%;
+    position: absolute;
+    bottom: 142px;
+    right: -39px;
+    z-index: 1;
+}
 .row-6{
     overflow: hidden;
     display: flex;
@@ -557,19 +564,19 @@ textarea:focus+label{
     width: 100%;
 }
 .scroll{
-    width: 100%;
+    width: 94%;
     overflow-y: scroll;
-    max-height: 43%;
+    max-height: 62%;
 }
 .scroll img{
-    width: 99.2%;
+    width: 100%;
     overflow-y: scroll;
     height: 100%;
 }
 .scroll {
     position: absolute;
-    top: 21%;
-    left: 1%;
+    top: 5%;
+    left: 3%;
 }
 .col-6 h1{
     padding-bottom: 10px;
