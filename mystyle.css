@@ -19,7 +19,7 @@ body{
     background-color: #22324C;
 }
 ::-webkit-scrollbar{
-    width: 7px;
+    width: 3px;
 }
 ::-webkit-scrollbar-thumb{
     background-color: #4B4DDE;
@@ -104,7 +104,6 @@ nav{
 
 .row-1{
     display: flex;
-    margin-top: 5%;
     height: 100%;
 }
 .col-1{
@@ -169,6 +168,7 @@ nav{
     width: 180px;
 }
 .col-2{
+    border-radius: 30px;
     justify-content: center;
     margin: auto;
     padding: 20px;
@@ -569,9 +569,9 @@ textarea:focus+label{
     width: 100%;
 }
 .scroll{
-    width: 94%;
+    width: 76%;
     overflow-y: scroll;
-    max-height: 62%;
+    max-height: 52%;
 }
 .scroll img{
     width: 100%;
@@ -580,8 +580,8 @@ textarea:focus+label{
 }
 .scroll {
     position: absolute;
-    top: 5%;
-    left: 3%;
+    top: 14%;
+    left: 10.5%;
 }
 .col-6 h1{
     padding-bottom: 10px;
@@ -593,6 +593,7 @@ textarea:focus+label{
 /* footer style  */
 
 .row-l{
+    border-radius: 10em 0 0 0;
     display: flex;
     background-color: #192233;
     padding: 90px 5%;

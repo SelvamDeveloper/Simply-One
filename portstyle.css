@@ -16,7 +16,7 @@ body{
     background-color: #22324C;
 }
 ::-webkit-scrollbar{
-    width: 7px;
+    width: 1px;
 }
 ::-webkit-scrollbar-thumb{
     background-color: #4B4DDE;
@@ -91,6 +91,34 @@ img{
     height: auto;
 }
 
+/* wave background style  */
+
+  .wrap {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+  }
+  .shape {
+    width: 700px;
+    height: 700px;
+    background: linear-gradient(64.00916346799386deg,#6525DC  23.44140625%,rgba(158, 0, 236,1) 79.84765625%);
+    animation: wave 4.0s ease-in-out infinite;
+  }
+  @keyframes wave {
+    0%, 100% {
+      border-radius: 70% 30% 72% 28% / 27% 61% 39% 73%;
+    }
+    50% {
+      border-radius: 77% 23% 54% 46% / 40% 38% 62% 60%;
+    }
+  }
+
+/* filter style  */
+
 
 .filter-menu{
     margin-bottom: 20px;
@@ -117,7 +145,7 @@ img{
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    padding: 0 15%;
+    padding: 0 10%;
     grid-gap: 20px;
 }
 
@@ -150,9 +178,9 @@ img{
     width: 100%;
 }
 .scroll{
-    width: 94%;
+    width: 76%;
     overflow-y: scroll;
-    max-height: 64%;
+    max-height: 53%;
 }
 .scroll img{
     width: 100%;
@@ -161,14 +189,14 @@ img{
 }
 .scroll {
     position: absolute;
-    top: 4%;
-    left: 3%;
+    top: 13%;
+    left: 10.5%;
 }
 .res{
     width: 24%;
     position: absolute;
-    bottom: -14px;
-    right: -24px;
+    bottom: 0px;
+    right: 0px;
     z-index: 1;
 
 }
