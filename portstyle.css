@@ -150,31 +150,29 @@ img{
     width: 100%;
 }
 .scroll{
-    width: 100%;
+    width: 94%;
     overflow-y: scroll;
-    max-height: 43%;
+    max-height: 64%;
 }
 .scroll img{
-    width: 99.4%;
+    width: 100%;
     overflow-y: scroll;
     height: 100%;
 }
 .scroll {
     position: absolute;
-    top: 21%;
-    left: 1%;
+    top: 4%;
+    left: 3%;
 }
 .res{
-    width: 30%;
-}
-.res img{
+    width: 24%;
     position: absolute;
-    width: 29%;
-    height: 45%;
+    bottom: -14px;
+    right: -24px;
     z-index: 1;
-    bottom: 67px;
-    right: 0;
+
 }
+
 
 /* particals animation  */
 
