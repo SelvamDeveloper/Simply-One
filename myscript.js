@@ -3,16 +3,34 @@
 AOS.init();
 
 // menu script 
-
+        let logo = document.querySelector(".logo");
+        let svg = document.querySelector(".svgburg");
         var menuList=document.getElementById("menulist");
+        let row = document.querySelector(".row-1");
+
+
+
         function togglemenu(){
-            if(menuList.style.maxHeight =="1200px")
+            if(menuList.style.transform =="translate(0%)")
                 {
-                menuList.style.maxHeight="0px";
+                menuList.style.transform="translate(100%)";
+                logo.style.position = "relative";
+                svg.style.position = "relative";
+                svg.style.top = "-7px";
+                svg.style.right = "10px";
+                row.style.opacity= "1";
+
+
                 }
             else
                 {
-                menuList.style.maxHeight="1200px";
+                menuList.style.transform="translate(0%)";
+                logo.style.position = "fixed";
+                svg.style.position = "fixed";
+                svg.style.top = "26px";
+                svg.style.right = "35px";
+                row.style.opacity= "0";
+
                 }
 
             }
@@ -85,3 +103,8 @@ AOS.init();
                 }
             });
         }
+
+
+// menu icon script 
+
+    

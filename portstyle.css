@@ -39,62 +39,19 @@ nav{
     display: flex;
     justify-content: space-between;
 }
-.menu-icon{
-    width: 40px;
-    display: none;
+.menu a {
+    font-size: 35px;
 }
-.menu ul{
-    display: flex;
-    margin: auto;
-    overflow: hidden;
-    padding: 30px;
-    max-height: 100px;
-    transition: 1.5s;
-}
-.menu ul li{
-    margin:auto 20px;
-    font-size: 20px;
-    transition: 0.5s;
-    overflow: visible;
-}
-.menu ul li:hover{
-    transform: translateX(-10px);  
-    position: relative;  
-}
-.menu ul li::before{
-    content: "";
-    position: absolute;
-    height: 4px;
-    bottom: -10px;
-    left: 0;
-    width: 0%;
-    background: linear-gradient(283.44deg, #6525DC 0.03%, #4B4DDE 72.58%);
-    transition: 0.5s;
-    
-}
-.menu ul li:hover:before{
-    width: 100%;
-}
-
-html,body{
-    width: 100%;
-    height: 100%;
-}
-
-
-ul{
-    list-style: none;
-}
-
 img{
     max-width: 100%;
     height: auto;
 }
 
+
 /* wave background style  */
 
   .wrap {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -438,6 +395,11 @@ img{
 
     }
 
+    .shape {
+        width: 100%;
+        height: 50%;
+    }
+
 }
 
 /* loader style  */
@@ -450,3 +412,5 @@ img{
     position: fixed;
     z-index: 111111111;
 }
+
+

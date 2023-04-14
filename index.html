@@ -14,6 +14,7 @@
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
 
     </head>
@@ -37,6 +38,10 @@
             <div class="p-10"></div>
             <div class="p-11"></div>
             <div class="p-12"></div>
+
+            <!-- navbar contant  -->
+            <div class="l-p">
+
             <nav>
                 <div class="logo">
                     <a href="index.html"><img src="img/Simply one logo.png" alt="logo"></a>
@@ -52,21 +57,25 @@
                         <path class="mline" d="M1.5 20H28.5" stroke="white" stroke-width="4"/>
                         </svg>
                     </div>
-                    
-                     <ul id="menulist">
-                        <li><a href="">Home</a></li>
-                        <li><a href="#price">Pricing</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="#about">About</a></li>
-                    </ul>
+                    <div id="menulist">
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="#price">Pricing</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="#about">About</a></li>
+                        </ul>
+                    </div>
+                     
                 </div>
             </nav>
-            <div class="l-p">
                 <div class="row-1">
                     <div class="col-1">
                         <h1>Simply One Make Amazing Design for your Business</h1>
                         <p>some brand need a professional marketing but they don't know website is more important</p>
-                        <button><a href="https://wa.me/9361232589?text=Hello! I Need a Website from You">Contact Us</a></button>
+                        <a href="https://wa.me/9361232589?text=Hello! I Need a Website from You">
+                            <span>CONTACT US</span>
+                            <div class="wave"></div>
+                          </a>
                     </div>
                     <div class="col-1">
                         <img src="img/l-img.svg" alt="">
@@ -365,6 +374,22 @@
       window.addEventListener("load", function(){
       loader.style.display="none";
       })
+</script>
+<script>
+        const burgAnimation = () =>{
+            var burger = document.querySelector('.svgburg')
+            var path1 = document.querySelector('.path1')
+            var path2 = document.querySelector('.path2')
+            var mline = document.querySelector('.mline')
+            burger.addEventListener('click',() =>{     
+                path1.classList.toggle('cross');
+                path2.classList.toggle('cross');
+                mline.classList.toggle('hide');
+                }
+            )
+        
+        }
+        burgAnimation();
 </script>
 
 </body>
