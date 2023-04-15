@@ -5,7 +5,6 @@
     color: #ffff;
     list-style: none;
     border: none;
-    overflow-x: hidden;
     text-decoration: none;
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -98,6 +97,13 @@ nav{
     height: 100%;
     font-size: 20px;
     
+}
+.m-icon i{
+    font-size: 45px;
+    padding: 0 10px;
+}
+.m-icon i::after{
+    display: none;
 }
 /* menu icon animation   */
 
@@ -637,7 +643,7 @@ textarea:focus+label{
     max-width: 78%;
     position: absolute;
     left: -17%;
-    bottom: -3%;
+    bottom: 0;
     z-index: 1;
 }
 .res{
