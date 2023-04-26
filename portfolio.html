@@ -17,6 +17,9 @@
 
        <div id="preloader"></div>
 
+    
+        <!-- container  -->
+
     <div class="container">
         <!-- wave contant  -->
 
@@ -24,12 +27,13 @@
             <div class="shape"></div>
           </div>    
 
-        <!-- main contant  -->
 
+        <!-- main contant  -->
+<!-- 
         <div class="p-1"></div>
         <div class="p-2"></div>
         <div class="p-3"></div>
-        <div class="p-4"></div>
+        <div class="p-4"></div> -->
         <nav>
             <div class="logo">
                 <a href="index.html"><img src="img/Simply one logo.png" alt="logo"></a>
@@ -43,8 +47,9 @@
             <li data-target="builder">Builder</li>
             <li data-target="Communtiy">Communtiy</li>
             <li data-target="Podcast">Podcast</li>
+            <li data-target="Photography">Photography</li>
+            <li data-target="portfolio">Portfolio</li>
         </div>
-        <p class="m-click">Click the mobile to check the live webiste</p>
 
         <div class="filter-item">
             <div class="sec" data-item="Communtiy">
@@ -97,6 +102,23 @@
                     <img src="img/p-5.jpg" alt=""></div>
                 </div>
             </div>
+            <div class="sec" data-item="Photography">
+                <div  class="col-6">
+                    <img src="img/mac.png" alt="">
+                    <div class="res">
+                        <a href="http://thirdeyephotographykanchi.com/"><img src="img/3i.png" title="Click for live website"></a>
+                    </div>
+                <div class="scroll">
+                    <img src="img/p-6.jpg" alt=""></div>
+                </div>
+            </div>
+            <div class="sec" data-item="portfolio">
+                <div  class="col-6">
+                    <img src="img/portfolio.png" alt="">
+                    <div class="res">
+                        <a href="https://simplyonecode.github.io/Selvam-portfolio/"><img src="img/p-m.png" title="Click for live website"></a>
+                    </div>
+            </div>
             
         </div>
     </div>
@@ -107,7 +129,23 @@
 
 
     </div>
+    <!-- message box alert  -->
 
+    <div class="toast active">
+  
+        <div class="toast-content">
+          <i class="fas fa-solid fa-check check"></i>
+      
+          <div class="message">
+            <span class="text text-1">Check live site</span>
+            <span class="text text-2">Click the Mobile to check live site</span>
+          </div>
+        </div>
+        <i class="fa-solid fa-xmark close"></i>
+      
+        <!-- Remove 'active' class, this is just to show in Codepen thumbnail -->
+        <div class="progress active"></div>
+      </div>
     
 <!-- script section -->
 
@@ -119,6 +157,10 @@
       window.addEventListener("load", function(){
       loader.style.display="none";
       })
+
+
+
+
 </script>
 
 </body>

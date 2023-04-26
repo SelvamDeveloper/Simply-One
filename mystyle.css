@@ -1409,10 +1409,17 @@ textarea:focus+label{
     .cursor,.cursor2{
         display: none;
     }    
+    /* wave  */
 
+    .col-1 a{
+        width: 155px;
+    }
+    span{
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
 }
-
-
+ 
 /* loader style  */
 
 #preloader{
