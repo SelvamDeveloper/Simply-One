@@ -102,9 +102,9 @@ AOS.init();
                     }
                 }
             });
-        }
+        };
 
 
-// menu icon script 
+// counter 
 
     

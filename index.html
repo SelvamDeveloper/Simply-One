@@ -12,6 +12,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <script src="https://kit.fontawesome.com/1df1b0320f.js" crossorigin="anonymous"></script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
@@ -117,6 +118,19 @@
                 </div>
             </div>    
         </div>
+
+        <!-- offer page  -->
+        <div id="top">
+            <div class="perspective">
+                <div class="card">
+                    <div class="thumb" style="background-image: url(https://img.freepik.com/free-photo/homepage-seen-computer-screen_23-2149416730.jpg?w=900&t=st=1682683420~exp=1682684020~hmac=ba5475eccb8f6ea5cc1dd204ba9ef501d690b7fe975f3f2da1e58b8b5f8eae12)"></div>
+                    <h2>25% offer for All Packages!</h1>
+                    <time class="countdown" date-time="2023-4-30 00:00:00" style="--accent: red"></time>
+                    <span>Offer will End Soon</span>
+                </div>
+            </div>
+        </div>
+
 
         <!-- custom section  -->
 
@@ -298,7 +312,7 @@
 
     <div class="mail">      
         <h1>Contact us</h1>
-        <form target="_blank" action="https://formsubmit.co/simplyone.in@gmail.com" method="POST">
+        <form action="https://formsubmit.co/simplyone.in@gmail.com" method="POST">
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_template" value="table">
             <input type="hidden" name="_subject" value="New submission from Business Website!">
@@ -404,6 +418,82 @@
         }
         burgAnimation();
 </script>
+<script>
+    // offer script
 
+    var o = $(".card");
+$("#top").on("mousemove", function (t) {
+  var e = -($(window).innerWidth() / 2 - t.pageX) / 25,
+    n = ($(window).innerHeight() / 5 - t.pageY) / 5;
+  o.attr(
+    "style",
+    "transform: rotateY(" +
+      e +
+      "deg) rotateX(" +
+      n +
+      "deg);-webkit-transform: rotateY(" +
+      e +
+      "deg) rotateX(" +
+      n +
+      "deg);-moz-transform: rotateY(" +
+      e +
+      "deg) rotateX(" +
+      n +
+      "deg)"
+  );
+});
+</script>
+<script>
+    class Countdown {
+  constructor(el){
+    this.el = el;
+    this.targetDate = new Date(el.getAttribute("date-time"));
+    this.createCountDownParts()
+    this.countdownFunction();
+    this.countdownLoopId = setInterval(this.countdownFunction.bind(this), 1000)
+  }
+  createCountDownParts(){
+    ["days", "hours", "minutes", "seconds"].forEach(part => {
+      const partEl = document.createElement("div");
+      partEl.classList.add("part", part);
+      const textEl = document.createElement("div");
+      textEl.classList.add("text");
+      textEl.innerText = part;
+      const numberEl = document.createElement("div");
+      numberEl.classList.add("number");
+      numberEl.innerText = 0;
+      partEl.append(numberEl, textEl);
+      this.el.append(partEl);
+      this[part] = numberEl;
+    })
+  }
+
+  countdownFunction(){
+    const currentDate = new Date();    
+    if(currentDate > this.targetDate) return clearInterval(this.intervalId);
+    const remaining = this.getRemaining(this.targetDate, currentDate);
+    Object.entries(remaining).forEach(([part,value]) => {
+      this[part].style.setProperty("--value", value)
+      this[part].innerText = value
+    })  
+  }
+  
+  getRemaining(target, now){
+    let seconds = Math.floor((target - (now))/1000);
+    let minutes = Math.floor(seconds/60);
+    let hours = Math.floor(minutes/60);
+    let days = Math.floor(hours/24);
+    hours = hours-(days*24);
+    minutes = minutes-(days*24*60)-(hours*60);
+    seconds = seconds-(days*24*60*60)-(hours*60*60)-(minutes*60);
+    return { days, hours, minutes, seconds }      
+  }
+
+}
+
+const countdownEls= document.querySelectorAll(".countdown") || [];
+countdownEls.forEach(countdownEl => new Countdown(countdownEl))
+
+</script>
 </body>
 </html> 

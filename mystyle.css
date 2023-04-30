@@ -444,13 +444,12 @@ nav{
   
   #faq h2 {
     color: #4B4DDE;
-    font-family: 'hm_light', sans-serif;
     font-size: 20px;
     line-height: 34px;
     text-align: left;
     padding: 15px 15px 0;
     text-transform: none;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 1px;
     display: block;
     margin: 0;
@@ -461,7 +460,6 @@ nav{
   #faq p {
     color: #333;
     text-align: left;
-    font-family: 'hm_light', sans-serif;
     font-size: 16px;
     line-height: 1.45;
     position: relative;
@@ -1418,6 +1416,29 @@ textarea:focus+label{
         font-size: 13px;
         letter-spacing: 1px;
     }
+
+
+    /* offer  */
+        .card {
+            width: 80% !important;
+            height: 400px !important;
+            margin: auto;
+            box-shadow: 0 70px 63px -60px #494848;
+            transform-style: preserve-3d;
+            transition: transform .05s linear;
+        }
+        .card span{
+            font-size: 30px !important;
+            right: -21px !important;
+        }
+        .card h2 {
+            position: absolute;
+            top: -5px !important;
+            left: 15px !important;
+            font-size: 28px !important;
+            font-weight: 500 !important;
+            transform: translateZ(80px);
+        }
 }
  
 /* loader style  */
@@ -1432,3 +1453,149 @@ textarea:focus+label{
 }
 
 
+/* offer section  */
+
+.perspective {
+    width: 100%;
+    perspective: 1000px;
+}
+
+#top {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+    z-index: 1111111111;
+    position: relative;
+}
+
+.card {
+    width: 730px;
+    height: 413px;
+    margin: auto;
+    box-shadow: 0 70px 63px -60px #494848;
+    transform-style: preserve-3d;
+    transition: transform .05s linear;
+
+    
+}
+.thumb {
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        border-radius: 15px;
+
+       
+    }
+ .thumb:after {
+            background: inherit;
+            content: '';
+            display: block;
+            position: absolute;
+            left: -60px;
+            top: 40px;
+            width: 100%;
+            height: 108%;
+            z-index: -1;
+            filter: blur(55px);
+        }
+    .card h2 {
+        position: absolute;
+        top: 0;
+        left: -60px;
+        font-size: 40px;
+        font-weight: 100;
+        transform: translateZ(80px);
+    }
+
+    .card span {
+        position: absolute;
+        bottom: 40px;
+        right: -280px;
+        font-size: 37px;
+        font-weight: 600;
+        transform: translateZ(35px);
+    }
+
+.dribbble {
+    position: fixed;
+    top: 25px;
+    right: 25px;
+
+    
+}
+.thumb > a {
+        font-size: 12px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #ec4989;
+    }
+    .thumb img {
+    margin: auto;
+    display: block;
+    border-radius: 15px;
+}
+
+/* count  */
+
+@layer demo, countdown;
+
+@layer countdown{
+  .countdown {
+    width: fit-content;
+    display: inline-grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    gap: 1rem;
+    position: relative;
+    bottom: -10px;
+  }
+  .countdown > .part {
+    display: grid;
+    gap: 0.5rem;
+  }
+  .countdown > .part > .number {
+    aspect-ratio: 1;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    border: 1px solid hsl(0, 0%, 100%) !important;
+    font-size: 1.5rem;
+    position: relative
+  }
+  .countdown > .part.days { --num: 365 }
+  .countdown > .part.hours { --num: 24 }
+  .countdown > .part:where(.minutes, .seconds) { --num: 60 }
+  .countdown > .part > .number::after{
+    content: "";
+    position: absolute;
+    inset: calc(var(--border-size) * -0.5);
+    border-radius: inherit;
+
+    --degree: calc(360deg / var(--num) * (var(--num) - var(--value,0)));
+    background-image: conic-gradient(#6525dc var(--degree), transparent calc(var(--degree) + 0.1deg));
+
+    --border-size: 4px;  
+    --mask-image: radial-gradient(100% 100%, transparent calc(50% - var(--border-size)), black calc(50% - var(--border-size) + 1px));
+    -webkit-mask-image: var(--mask-image);
+    mask-image: var(--mask-image);
+  }
+  .countdown > .part > .text {
+    text-align: center;
+    opacity: 0.75
+  }
+}
+@layer demo {
+  * { box-sizing: border-box }
+  body {
+    background-color: #060D1F;
+    color: #FEFEFE;
+    font-family: system-ui, sans-serif;
+    text-align: center;
+  }
+  h2 {
+    margin-top: 4rem;
+  }
+}
