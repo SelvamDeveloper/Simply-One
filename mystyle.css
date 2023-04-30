@@ -1420,6 +1420,7 @@ textarea:focus+label{
 
     /* offer  */
         .card {
+            transform: none !important;
             width: 80% !important;
             height: 400px !important;
             margin: auto;
@@ -1473,7 +1474,7 @@ textarea:focus+label{
 
 .card {
     width: 730px;
-    height: 413px;
+    height: 472px;
     margin: auto;
     box-shadow: 0 70px 63px -60px #494848;
     transform-style: preserve-3d;
