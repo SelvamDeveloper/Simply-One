@@ -1588,13 +1588,6 @@ textarea:focus+label{
   }
 }
 @layer demo {
-  * { box-sizing: border-box }
-  body {
-    background-color: #060D1F;
-    color: #FEFEFE;
-    font-family: system-ui, sans-serif;
-    text-align: center;
-  }
   h2 {
     margin-top: 4rem;
   }
