@@ -163,20 +163,6 @@
 
 
 
-
-        <!-- offer -->
-        <div id="top">
-            <div class="perspective">
-                <div class="card">
-                    <div class="thumb" style="background-image: url(img/off.jpg)"></div>
-                    <h2>25% offer for All Packages!</h1>
-                    <time class="countdown" date-time="2023-5-30 00:00:00" style="--accent: red"></time>
-                    <span>Offer will End Soon</span>
-                </div>
-            </div>
-        </div>
-
-
         <!-- custom section  -->
 
         <div class="custom">
@@ -462,31 +448,6 @@
         
         }
         burgAnimation();
-</script>
-<script>
-    // offer script
-
-    var o = $(".card");
-$("#top").on("mousemove", function (t) {
-  var e = -($(window).innerWidth() / 2 - t.pageX) / 25,
-    n = ($(window).innerHeight() / 5 - t.pageY) / 6;
-  o.attr(
-    "style",
-    "transform: rotateY(" +
-      e +
-      "deg) rotateX(" +
-      n +
-      "deg);-webkit-transform: rotateY(" +
-      e +
-      "deg) rotateX(" +
-      n +
-      "deg);-moz-transform: rotateY(" +
-      e +
-      "deg) rotateX(" +
-      n +
-      "deg)"
-  );
-});
 </script>
 <script>
     class Countdown {

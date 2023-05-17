@@ -365,12 +365,14 @@ nav{
 .intigration{
     display: flex;
     margin: auto;
-    width: 40%;
+    width: 50%;
     align-items: center;
-    justify-content: space-between;
-    padding: 30px ;
+    justify-content: center;
+    padding: 30px  0;
 }
 .intigration p{
+    width: 0;
+    padding-right: 20px;
     font-size: 20px;
     font-weight: 300;
 }
@@ -1451,28 +1453,7 @@ textarea:focus+label{
     }
 
 
-    /* offer  */
-        .card {
-            transform: none !important;
-            width: 80% !important;
-            height: 400px !important;
-            margin: auto;
-            box-shadow: 0 70px 63px -60px #494848;
-            transform-style: preserve-3d;
-            transition: transform .05s linear;
-        }
-        .card span{
-            font-size: 30px !important;
-            right: -21px !important;
-        }
-        .card h2 {
-            position: absolute;
-            top: -5px !important;
-            left: 15px !important;
-            font-size: 28px !important;
-            font-weight: 500 !important;
-            transform: translateZ(80px);
-        }
+
 }
  
 /* loader style  */
@@ -1486,91 +1467,6 @@ textarea:focus+label{
     z-index: 111111111;
 }
 
-
-/* offer section  */
-
-.perspective {
-    width: 100%;
-    perspective: 1000px;
-}
-
-#top {
-    width: 100%;
-    height: 50vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 50px 0;
-    z-index: 1111111111;
-    position: relative;
-}
-
-.card {
-    width: 730px;
-    height: 472px;
-    margin: auto;
-    box-shadow: 0 70px 63px -60px #494848;
-    transform-style: preserve-3d;
-    transition: transform .05s linear;
-
-    
-}
-.thumb {
-        background-size: cover;
-        height: 100%;
-        width: 100%;
-        border-radius: 15px;
-
-       
-    }
- .thumb:after {
-            background: inherit;
-            content: '';
-            display: block;
-            position: absolute;
-            left: -60px;
-            top: 40px;
-            width: 100%;
-            height: 108%;
-            z-index: -1;
-            filter: blur(55px);
-        }
-    .card h2 {
-        position: absolute;
-        top: 0;
-        left: -60px;
-        font-size: 40px;
-        font-weight: 100;
-        transform: translateZ(80px);
-    }
-
-    .card span {
-        position: absolute;
-        bottom: 40px;
-        right: -280px;
-        font-size: 37px;
-        font-weight: 600;
-        transform: translateZ(35px);
-    }
-
-.dribbble {
-    position: fixed;
-    top: 25px;
-    right: 25px;
-
-    
-}
-.thumb > a {
-        font-size: 12px;
-        text-transform: uppercase;
-        text-decoration: none;
-        color: #ec4989;
-    }
-    .thumb img {
-    margin: auto;
-    display: block;
-    border-radius: 15px;
-}
 
 /* count  */
 
