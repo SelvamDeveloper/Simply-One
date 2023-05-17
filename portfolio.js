@@ -95,9 +95,9 @@ for(let i = 0; i < sortBtn.length; i++){
         // toast.classList.add("active");
         // progress.classList.add("active");
 
-        // timer1 = setTimeout(() => {
-        //     toast.classList.remove("active");
-        // }, 5000); //1s = 1000 milliseconds
+        timer1 = setTimeout(() => {
+            toast.classList.remove("active");
+        }, 5000); //1s = 1000 milliseconds
 
         // timer2 = setTimeout(() => {
         //     progress.classList.remove("active");

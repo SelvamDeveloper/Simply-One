@@ -247,6 +247,7 @@ nav{
 /* benefit section  */
 
 .title h1{
+    position: relative;
     text-align: center;
     padding: 15px 0;
     font-size: 35px;
@@ -259,21 +260,22 @@ nav{
     padding-bottom: 30px;
 }
 .benifit{
-    padding: 0px 8%;
+    padding: 50px 8%;
     height: 100%;
-    position: relative;
     z-index: -1;
 }
 .row-2 {
     overflow: hidden;
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 .col-2 img{
     width: 180px;
+    z-index: 111;
 }
 .col-2{
+    position: relative;
     border-radius: 30px;
     justify-content: center;
     margin: auto;
@@ -294,6 +296,37 @@ nav{
     font-size: 17px;
     padding: 20px 0;
 }
+
+/* section services  */
+
+/* wave background style  */
+
+.wrap {
+    top: 50px;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+  .shape {
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(64.00916346799386deg,#6100ff 23.44140625%,rgb(97 0 255) 79.84765625%);
+    animation: wave 4.0s ease-in-out infinite;
+  }
+  @keyframes wave {
+    0%, 100% {
+      border-radius: 77% 23% 54% 46% / 40% 38% 62% 60%;
+    }
+    50% {
+      
+      border-radius: 70% 30% 72% 28% / 27% 61% 39% 73%;
+    }
+  }
+
+
 
 /* custom section  */
 
