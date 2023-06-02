@@ -31,13 +31,20 @@ hr{
   font-size: 13px;
   width: 30%;
   font-weight: 300;
+  display: flex;
+  justify-content: end;
 }
 .header p{
-  font-size: 13px;
+  font-size: 14px;
   width: 100%;
 }
 .rights{
   display: flex;
+}
+.rights p{
+  font-size: 14px;
+  width: 95%;
+  
 }
 
 
