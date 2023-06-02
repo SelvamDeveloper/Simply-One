@@ -62,7 +62,7 @@ input::-webkit-inner-spin-button {
 
 .row-map{
   display: flex;
-  padding: 50px 10%;
+  padding: 50px 13%;
   font-size: 13px;
 }
 .map-details p{
