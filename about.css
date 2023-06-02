@@ -53,10 +53,15 @@ hr{
 textarea{
   height: 134px;
 }
-.col-5 input, textarea{
+.col-5 input, textarea , select{
   padding: 10px;
   background-color: white;
   color: #252525;
+}
+
+option{
+  color: #252525;
+  
 }
 
 input::-webkit-outer-spin-button,
