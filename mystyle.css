@@ -1313,6 +1313,9 @@ textarea:focus+label{
     .title p{
         font-size: 15px;
     }
+    .benifit .row-2{
+         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
 
     /* custom style  */
 
