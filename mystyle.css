@@ -98,6 +98,7 @@ nav{
     font-size: 20px;
     
 }
+
 .m-icon i{
     font-size: 38px;
     padding: 0 10px;
@@ -187,7 +188,7 @@ nav{
           .wave::after {
             border-radius: 40%;
             background-color: #1922334a;
-            animation: wave 5s linear infinite;
+            animation: wave 10s linear infinite;
           }
         
       
@@ -225,11 +226,20 @@ nav{
 .col-1 h1{
     font-size: 57px;
     padding-bottom: 10px;
+    font-family: 'Anton', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 72px;
 }
 .col-1 p{
-    font-size: 20px;
+    font-size: 14px;
     padding-bottom: 30px;
     max-width: 600px;
+}
+.col-1 hr{
+    border: 1px solid #ffffff96;
+    margin: 20px auto;
+    width: 85%;
 }
 .col-1 button{
     background: linear-gradient(283.44deg, #6525DC 0.03%, #4B4DDE 72.58%);
@@ -387,7 +397,7 @@ nav{
 /* pricing style  */
 
 .row-4{
-    padding: 80px 15%;
+    padding: 80px 10%;
     display: grid;
     grid-gap: 40px;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -484,7 +494,6 @@ nav{
     padding: 15px 15px 0;
     text-transform: none;
     font-weight: 400;
-    letter-spacing: 1px;
     display: block;
     margin: 0;
     cursor: pointer;
