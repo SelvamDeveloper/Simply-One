@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    color: #ffff;
+    color: #192233;
     list-style: none;
     border: none;
     text-decoration: none;
@@ -11,11 +11,15 @@
 }
 
 
-
+nav{
+  position: fixed !important;
+  padding: 0 !important;
+}
 .header{
   padding: 30px 10%;
 }
 .header h1{
+  margin-top: 100px;
   font-family: 'Anton', sans-serif;
   font-weight: 400;
   text-transform: uppercase;
@@ -24,7 +28,7 @@
 hr{
   width: 95%;
   margin: auto;
-  border: 1px solid #ffffff89;
+  border: 1px solid #00000048;
   margin-bottom: 30px;
 }
 .header h2{
