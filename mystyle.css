@@ -135,76 +135,36 @@ nav{
     right: 10px;
  }
  
- /*reduce height and wihth of svg for resizing*/
-    /* wave button animation  */
+/* button animation  */
 
-    .col-1 a {
-        width: 200px;
-        padding: 20px 30px;
-        position: relative;
-        display: block;
-        border-radius: 20px;
-        text-decoration: none;
-        overflow: hidden;
-    }
-    .col-1 a:hover .wave,
-        .wave:hover {
-            top: -120px;
-          }
-    
-    
-        span {
-          position: relative;
-          z-index: 1;
-          color: white;
-          font-size: 15px;
-          letter-spacing: 3px;
-        }
-    
-        .wave {
-          width: 200px;
-          height: 200px;
-          background-color: #4B4DDE;
-          box-shadow: inset 0 0 50px rgba(0,0,0,.5);
-          position: absolute;
-          left: 0;
-          top: -80px;
-          transition: 0.4s;
-        }
-          .wave::before, .wave::after {
-            width: 200%;
-            height: 200%;
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 50%;
-            transform: translate(-50%,-75%);
-          }
-    
-          .wave::before {
-            border-radius: 45%;
-            background-color: #22324cd4;
-            animation: wave 5s linear infinite;
-          }
-    
-          .wave::after {
-            border-radius: 40%;
-            background-color: #1922334a;
-            animation: wave 10s linear infinite;
-          }
-        
-      
-    
-      @keyframes wave {
-        0% {
-          transform: translate(-50%,-75%) rotate(0deg);
-        }
-    
-        100% {
-          transform: translate(-50%,-75%) rotate(360deg);
-        }
-      }
-    
+
+strong{
+    color: white;
+}
+
+#bottone1 {
+    padding-left: 33px;
+    padding-right: 33px;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    width: 200px;
+    border-radius: 9px;
+    background: #4B4DDE;
+    border: none;
+    font-family: inherit;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.4s;
+   }
+   
+   #bottone1:hover {
+    box-shadow: 7px 5px 56px -14px #4B4DDE;
+   }
+   
+   #bottone1:active {
+    transform: scale(0.97);
+    box-shadow: 7px 5px 56px -10px #4B4DDE;
+   }
 
 
 /* main landing page  */
@@ -244,15 +204,7 @@ nav{
     margin: 20px auto;
     width: 85%;
 }
-.col-1 button{
-    background: linear-gradient(283.44deg, #6525DC 0.03%, #4B4DDE 72.58%);
-    border-radius: 6px;
-    width: 150px;
-    border: none;
-    padding: 10px;
-    font-size: 18px;
-    transition: 0.5s;
-}
+
 .col-1 button:hover{
     transform: translateY(-10px);
 }
@@ -397,6 +349,9 @@ nav{
     border-radius: 6px;
     font-size: 15px;
     font-weight: 400;
+}
+.intigration button a{
+    color: white;
 }
 
 /* pricing style  */
@@ -721,7 +676,7 @@ textarea:focus+label{
 .row-6{
     overflow: hidden;
     display: flex;
-    padding: 0px 10%;
+    padding: 50px 10%;
 }
 .col-6:nth-child(1){
     display: flex;
@@ -741,7 +696,7 @@ textarea:focus+label{
 .scroll{
     width: 76%;
     overflow-y: scroll;
-    max-height: 52%;
+    max-height: 42%;
 }
 .scroll img{
     width: 100%;
@@ -750,15 +705,23 @@ textarea:focus+label{
 }
 .scroll {
     position: absolute;
-    top: 14%;
+    top: 11%;
     left: 10.5%;
 }
 .col-6 h1{
-    padding-bottom: 10px;
+    padding-bottom: 45px;
 }
 .col-6 p{
     width: 80%;
+    padding-bottom: 50px;
 }
+hr{
+    width: 95%;
+    margin: auto;
+    background: #1922334d;
+    height: 1px;
+    margin-bottom: 30px;
+  }
 
 /* footer style  */
 
@@ -779,7 +742,7 @@ textarea:focus+label{
     font-size: 15px;
 }
 .col-l:nth-child(2){
-    padding-left: 5%;
+    padding-left: 0%;
 }
 .col-l h1{
     font-size: 25px;

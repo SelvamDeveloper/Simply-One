@@ -26,10 +26,11 @@ nav{
   font-size: 150px;
 }
 hr{
-  width: 95%;
-  margin: auto;
-  border: 1px solid #00000048;
-  margin-bottom: 30px;
+    width: 95%;
+    margin: auto;
+    background: #1922334d;
+    height: 1px;
+    margin-bottom: 30px;
 }
 .header h2{
   font-size: 13px;
