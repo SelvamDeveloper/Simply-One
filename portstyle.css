@@ -467,7 +467,7 @@ img{
   font-size: 15px;
 }
 .col-l:nth-child(2){
-  padding-left: 5%;
+  padding-left: 0%;
 }
 .col-l h1{
   font-size: 25px;
@@ -661,7 +661,7 @@ img{
         width: 180px;
     }
     nav{
-        padding: 20px 5%;
+        padding: 10px 5%;
     }
 
 
@@ -687,8 +687,9 @@ img{
       }
 
     .toast{
-        padding: 10px 25px 10px 15px;
-        top: 17px;
+        padding: 20px 25px 20px 15px;
+        top: 100px;
+        right: 10px;
     }
 
      /* footer  */
@@ -702,7 +703,7 @@ img{
   .col-l h1::after{
       content: "";
       bottom: 0;
-      left: 50%;
+      left: 18%;
       transform: translateX(-50%);
       position: absolute;
       height: 5px;
@@ -721,6 +722,9 @@ img{
   }
   .col-l:nth-child(3) p{
       padding: 10px 0;
+  }
+  .col-l{
+      text-align: left;
   }
   
   /* icon style  */
@@ -790,7 +794,7 @@ img{
   margin-top: 50px;
   margin-left: -20px;
   border-radius: 0 0 5px 5px;
-  background: #6bb2cd;
+  background: #4b4dde;
   animation-name: dot3_;
 }
 
@@ -886,7 +890,7 @@ hr{
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    padding: 0 10%;
+    padding: 10px 10%;
     grid-gap: 20px
 }
 .col-12{
@@ -937,6 +941,13 @@ hr{
     }
     #filterable-cards .card {
       width: 100% ;
+    }
+    #filter-buttons button{
+      width: 100%;
+      text-align: left;
+    }
+    .title{
+      margin-top: 100px;
     }
     .row{
       width: 100%;

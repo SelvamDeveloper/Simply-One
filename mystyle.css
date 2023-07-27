@@ -9,8 +9,25 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-p::selection{
-    background: #6100ff;
+.ratufa-popup-title{
+    display: none !important;
+}
+.ratufa-overlay {
+    z-index: 999999;
+    display: flex;
+}
+.ratufa-popup-container{
+    margin: auto !important;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+:root{
+    --swiper-theme-color: #585bff;
+}
+::selection{
+    background: #4b4dde;
     color: white;
 }
 body{
@@ -67,7 +84,7 @@ nav{
 }
 .menu-icon{
     width: 40px;
-    display: block;
+    display: none;
     z-index: 11111;
     position: relative;
 }
@@ -108,33 +125,7 @@ nav{
 .m-icon i::after{
     display: none;
 }
-/* menu icon animation   */
 
-.path1, .path2{
-    stroke-dasharray: 104;
-    stroke-dashoffset: -71;
-    transition: 1s all ease;
- }
- .cross{
-   stroke-dashoffset: 68;
- }
- .mline{
-   stroke-dasharray: 41;
-   stroke-dashoffset: -82;
-   transition: 1s all ease;
- }
- .hide{
-   stroke-dasharray: 43;
-   stroke-dashoffset: 130;
- }
- .svgburg{
-    position: relative;
-    top: -7px;
-    height: 68px;
-    width: 48px;
-    right: 10px;
- }
- 
 /* button animation  */
 
 
@@ -480,7 +471,7 @@ strong{
     font-size: 16px;
     position: relative;
     overflow: hidden;
-    max-height: 250px;
+    max-height: 1050px;
     will-change: max-height;
     contain: layout;
     display: inline-block;
@@ -680,6 +671,7 @@ textarea:focus+label{
 }
 .col-6:nth-child(1){
     display: flex;
+    align-items: start;
     flex-direction: column;
     justify-content: center;
     text-align: left;
@@ -689,6 +681,8 @@ textarea:focus+label{
     width: 100%;
 }
 .col-6{
+    display: flex;
+    align-items: center;
     position: relative;
     flex-basis: 50%;
     width: 100%;
@@ -696,7 +690,7 @@ textarea:focus+label{
 .scroll{
     width: 76%;
     overflow-y: scroll;
-    max-height: 42%;
+    max-height: 54%;
 }
 .scroll img{
     width: 100%;
@@ -705,7 +699,7 @@ textarea:focus+label{
 }
 .scroll {
     position: absolute;
-    top: 11%;
+    top: 13%;
     left: 10.5%;
 }
 .col-6 h1{
@@ -723,7 +717,51 @@ hr{
     margin-bottom: 30px;
   }
 
+  /* swiper ---------------- */
+
+  .swiper {
+    padding-bottom: 20px;
+    width: 100%;
+    padding-top: 50px;
+    margin-bottom: 20px !important ;
+    
+  }
+  
+  .swiper-pagination-bullet-active{
+    z-index: 111 !important;
+  } 
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 39.7% !important;
+    height: 100%;
+  }
+  .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+    bottom: -7px !important;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+  .swiper-3d .swiper-slide-shadow-left{
+    background-image: linear-gradient(to right,rgb(0 0 0 / 0%),rgba(0,0,0,0));
+  }
+  .swiper-3d .swiper-slide-shadow-right{
+    background-image: linear-gradient(to right,rgb(0 0 0 / 0%),rgba(0,0,0,0));
+  }
+  .swiper-slide-active{
+    filter: blur(0px);
+  }
+  
+
 /* footer style  */
+
+footer{
+    position: relative;
+    z-index: 9999;
+}
 
 .row-l{
     border-radius: 10em 0 0 0;
@@ -749,6 +787,7 @@ hr{
     padding-bottom: 10px;
 }
 .col-l  li{
+    text-transform: capitalize;
     font-size: 15px;
     padding: 5px 0;
     transition: 0.5s;
@@ -1239,7 +1278,11 @@ hr{
 }
 
 /* responsive layout  */
-
+@media (max-width: 768px){
+    .col-1:nth-child(1){
+        margin-top: 20% !important ;
+    }
+}
 @media (max-width: 1107px) {
 
     
@@ -1279,6 +1322,10 @@ hr{
         margin-right: -15px;
         width: 40px;
         display: flex;
+        top: 37px;
+        position: absolute;
+        right: 47px;
+
     }
     .logo img{
         width: 180px;
@@ -1288,7 +1335,9 @@ hr{
     }
 
     /* container  */
-
+    .col-1:nth-child(1){
+        margin-top: 40%;
+    }
     .row-1{
         flex-direction: column;
     }
@@ -1306,7 +1355,9 @@ hr{
     }
 
     /* why us style  */
-
+    .benifit{
+        padding: 50px 3%;
+    }
     .title h1{
         font-size: 10vw;
     }
@@ -1346,13 +1397,14 @@ hr{
     /* pricing style  */
 
     .row-4{
-        padding: 20px;
+        padding: 20px 3%;
     }
 
     /* profolio style  */
 
     .row-6{
         flex-direction: column;
+        padding: 50px 3%;
     }
     .col-6:nth-child(1){
         padding: 40px 0 0 0;
@@ -1372,11 +1424,16 @@ hr{
 
     #faq h2{
         padding-right: 30px;
+        font-size: 15px;
+        line-height: 28px;
     }
 
     /* mail section  */
+    .ratufa-popup-container {
+        width: 90% !important;
+    }
     .mail{
-        padding: 40px 5%;
+        padding: 40px 3%;
     
     }
     .row-5{
@@ -1398,7 +1455,7 @@ hr{
     .col-l h1::after{
         content: "";
         bottom: 0;
-        left: 50%;
+        left: 18%;
         transform: translateX(-50%);
         position: absolute;
         height: 5px;
@@ -1417,6 +1474,9 @@ hr{
     }
     .col-l:nth-child(3) p{
         padding: 10px 0;
+    }
+    .col-l{
+        text-align: left;
     }
     
     /* icon style  */
@@ -1455,6 +1515,52 @@ hr{
     }
 
 
+    /* new menu  */
+    .Responsive{
+        position: fixed;
+        transition: 1s;
+        top: 78px;
+        align-items: center;
+        left: 0;
+        padding-left: 0px !important;
+        height: 100vh;
+        background: white;
+        margin: auto;
+        transform: translateY(-100%);
+        width: 100%;
+    }
+    ol{
+        
+
+    display: grid;
+    width: 90%;
+    margin: auto;
+
+    }
+    .sub-menu{
+        position: static !important;
+        background-color: #00000000 !important;
+        z-index: 111111;
+        flex-direction: column;
+        box-shadow: 0 3px 12px rgb(255 255 255 / 0%) !important;
+    }
+    .menu-item:nth-child(n + 3):nth-child(-n + 4):hover .sub-menu{
+        max-height: 100% !important;
+        margin-top: 20px;
+    }
+    .sub-menu-item{
+        width: 100%;
+    }
+    .menu-item:nth-child(n + 3):nth-child(-n + 4) .sub-menu-item{
+        margin: 0 !important;
+        padding: 5px;
+    }
+    .search button{
+        display: none;
+    }
+    .logo {
+        left: 0rem !important;
+    }
 
 }
  
@@ -1501,7 +1607,7 @@ hr{
     margin-top: 50px;
     margin-left: -20px;
     border-radius: 0 0 5px 5px;
-    background: #6bb2cd;
+    background: #4b4dde;
     animation-name: dot3_;
   }
   
@@ -1584,7 +1690,7 @@ hr{
 
 
 .sub-1{
-    width: 200px;
+    width: 250px;
 }
 
 .menu-item  a {
@@ -1621,7 +1727,7 @@ hr{
   height: 79px;
   font-family: 'Titillium Web', sans-serif;
 }
-.menu ol {
+.Responsive {
   padding-left: 0px;
   margin: auto;
   
@@ -1630,7 +1736,7 @@ hr{
 	float: left;
 	position: absolute;
 	top: 10px;
-	left: 2rem;
+	left: 1rem;
 	width: 60px;
 	height: 50px;
 }
@@ -1677,7 +1783,6 @@ hr{
 .sub-menu {
   position: absolute;
   left: 0%;
-  display: flex;
   background: #ffffff;
   font-family: 'Titillium Web', sans-serif;
   top: 53px;
@@ -1695,7 +1800,7 @@ hr{
   visibility: hidden;
 }
 .menu-item:nth-child(n + 3):nth-child(-n + 4):hover .sub-menu {
-  max-height: 200px;
+  max-height: 500px;
   opacity: 1;
     -webkit-transform: translateY(0px);
           transform: translateY(0px);
@@ -1726,7 +1831,7 @@ hr{
   visibility: hidden;
 }
 .menu-item:nth-child(n + 3):nth-child(-n + 4):hover .sub-menu {
-  max-height: 200px;
+  max-height: 400px;
   opacity: 1;
 }
 .menu-item:nth-child(n + 3):nth-child(-n + 4):hover .sub-menu-item a {
@@ -1742,3 +1847,14 @@ hr{
   transition-delay: 0.15s;
   visibility: visible;
 }
+
+
+
+
+
+
+
+
+
+
+

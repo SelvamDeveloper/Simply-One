@@ -3,37 +3,25 @@
 AOS.init();
 
 // menu script 
-        let logo = document.querySelector(".logo");
-        let svg = document.querySelector(".svgburg");
-        var menuList=document.getElementById("menulist");
-        let row = document.querySelector(".row-1");
+        var Responsive=document.querySelector(".Responsive");
+        let Xmark = document.getElementById("icon");
+        
 
 
 
         function togglemenu(){
-            if(menuList.style.transform =="translate(0%)")
+            if(Responsive.style.transform =="translateY(0%)")
                 {
-                menuList.style.transform="translate(100%)";
-                logo.style.position = "relative";
-                svg.style.position = "relative";
-                svg.style.top = "-7px";
-                svg.style.right = "10px";
-                row.style.opacity= "1";
-
-
+                Responsive.style.transform="translateY(-100%)";
+                Xmark.src = "img/menu icon.png"
                 }
             else
                 {
-                menuList.style.transform="translate(0%)";
-                logo.style.position = "fixed";
-                svg.style.position = "fixed";
-                svg.style.top = "26px";
-                svg.style.right = "35px";
-                row.style.opacity= "0";
-
+                Responsive.style.transform="translateY(0%)";
+                Xmark.src = "img/x.png"
                 }
 
-            }
+            };
 
 
 
@@ -74,7 +62,7 @@ AOS.init();
         item.addEventListener('mouseleave', () => {
             cursor.classList.remove('hover');
         });
-        })
+        });
 
 // portfolio filter 
 
@@ -106,5 +94,6 @@ AOS.init();
 
 
 // counter 
+
 
     
